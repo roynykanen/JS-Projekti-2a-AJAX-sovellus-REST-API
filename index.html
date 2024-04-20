@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Tuodaan Font Awesome -kirjaston tyylitiedosto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Sivun nimi -->
+    <title>Weather Forecast App</title>
+</head>
+<body>
+    <div class="app">
+        <!-- Otsikko -->
+        <h1>Weather Forecast Dashboard</h1>
+        <div class="header">
+            <!-- Hakulomake -->
+            <form class="search-form"> 
+                <!-- Hakukenttä -->
+                <input type="text" class="search-input" placeholder="Search...">
+                <!-- Hakukuvake -->
+                <i class="fa-solid fa-magnifying-glass" id="glass"></i>
+            </form>
+        </div>
+        <!-- Sisältö -->
+        <div class="content">
+            <!-- Kaupungin nimi -->
+            <h1 class="city"></h1>
+            <!-- Sääennuste -->
+            <div class="forecast"></div>
+            <!-- Sääkuvake -->
+            <div class="icon"></div>
+            <!-- Kuvaus -->
+            <div class="description"></div>
+            <!-- Lämpötila -->
+            <p class="temperature"></p>
+            <!-- Lämpötilan minimi ja maksimi -->
+            <div class="minmax"></div>
+        </div>
+        <!-- Lisätiedot -->
+        <div class="info">
+            <!-- Infokortti -->
+            <div class="card">
+                <!-- Kuvake -->
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+                <div>
+                    <!-- Teksti -->
+                    <p>Feels like</p>
+                    <!-- Tiedot --> 
+                    <p class="feels"></p> 
+                </div>
+            </div>
+            <!-- Lisää samanlaisia infokortteja sääparametreille: tuuli, kosteus, paine -->
+            <div class="card">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Wind</p>
+                    <p class="wind"></p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Humidity</p>
+                    <p class="humidity"></p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div>
+                    <p>Pressure</p>
+                    <p class="pressure"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./js/script.js"></script>
+</body>
+</html>
