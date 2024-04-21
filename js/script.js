@@ -46,7 +46,6 @@ function getWeather() {
         .then(res => res.json()) // Muunnetaan vastaus JSON-muotoon
         .then(data => { // Käsitellään vastausdatat
             // Päivitetään HTML-elementit säätiedoilla
-            console.log(data)
             city.innerHTML = `${data.name}, ${data.sys.country}`;
             forecast.innerHTML = `<p>${data.weather[0].main}</p>`;
             icon.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png" alt="">`;
