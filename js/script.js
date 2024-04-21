@@ -17,7 +17,7 @@ const wind = document.querySelector(".wind");
 const humidity = document.querySelector(".humidity");
 const pressure = document.querySelector(".pressure");
 
-// Funktio, joka käsittelee hakulomakkeen lähetyksen
+// Tapahtumakuuntelija, joka käsittelee hakulomakkeen lähetyksen
 document.querySelector(".search-form").addEventListener('submit', e => {
     // Estetään lomakkeen oletustoiminta
     e.preventDefault();
@@ -29,7 +29,7 @@ document.querySelector(".search-form").addEventListener('submit', e => {
     search.value = "";
 });
 
-// Funktio, joka käsittelee suurennuslasin kuvakkeen klikkauksen
+// Tapahtumakuuntelija, joka käsittelee suurennuslasin kuvakkeen klikkauksen
 document.getElementById('glass').addEventListener('click', () => {
     // Asetetaan haettu kaupunki muuttujaan currentCity
     currentCity = search.value;
